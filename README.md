@@ -1,5 +1,5 @@
 # MajorSystem
-Slovar omogoča pretvorbo katerekoli tri mestne številkev besedo.
+Slovar omogoča pretvorbo katerekoli tri mestne številke v besedo.
 
 # Pravila za pretvorbo:
 * 1 - d, t
