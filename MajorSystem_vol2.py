@@ -3,19 +3,18 @@ import pickle
 
 class num():
 
-    def __init__(self, number):
+    def __init__(self, number, entries):
         self.number = number
+        self.entries = entries
 
     def add_entry(self):
         add = input('Input a new number code: ')
         self.entries.append(add)
 
-    def init_number(self):
-        self.entries = []
-
     def print_num(self):
         for code in enumerate(self.entries):
             print(code[0] + 1, '-', code[1])
+
 
 def save_num(object, file_name):
     file = open(file_name, 'wb')
@@ -28,10 +27,5 @@ def read_num(object):
     except:
         print('The number doesn\' exist.')
 
-
-
-n001 = num('001')
-n001.init_number()
-while True:
-    n001.add_entry()
-    n001.print_num()
+def reset_all():
+    numbers = [[]] * 1000
